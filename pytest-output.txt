@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.0.2, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/rzidinc/Projects/college/SDF/Assignment10
+plugins: typeguard-4.4.4
+collecting ... collected 18 items
+
+tests/test_pricing.py::test_calculate_subtotal[100-2-200] PASSED         [  5%]
+tests/test_pricing.py::test_calculate_subtotal[0-5-0] PASSED             [ 11%]
+tests/test_pricing.py::test_calculate_subtotal[1500-1-1500] PASSED       [ 16%]
+tests/test_pricing.py::test_calculate_subtotal[10.5-4-42.0] PASSED       [ 22%]
+tests/test_pricing.py::test_calculate_subtotal[19.99-3-59.97] PASSED     [ 27%]
+tests/test_pricing.py::test_subtotal_zero_unit_price_returns_zero PASSED [ 33%]
+tests/test_pricing.py::test_subtotal_negative_unit_price_raises PASSED   [ 38%]
+tests/test_pricing.py::test_subtotal_zero_quantity_raises PASSED         [ 44%]
+tests/test_pricing.py::test_subtotal_negative_quantity_raises PASSED     [ 50%]
+tests/test_pricing.py::test_apply_member_discount_member_gets_ten_percent PASSED [ 55%]
+tests/test_pricing.py::test_apply_member_discount_nonmember_pays_full PASSED [ 61%]
+tests/test_pricing.py::test_apply_member_discount_zero_subtotal PASSED   [ 66%]
+tests/test_pricing.py::test_add_tax_eleven_percent PASSED                [ 72%]
+tests/test_pricing.py::test_calculate_total_nonmember PASSED             [ 77%]
+tests/test_pricing.py::test_calculate_total_member PASSED                [ 83%]
+tests/test_pricing.py::test_calculate_total_propagates_input_validation PASSED [ 88%]
+tests/test_pricing.py::test_write_receipt_content_and_trailing_newline PASSED [ 94%]
+tests/test_pricing.py::test_write_receipt_single_line_and_overwrite PASSED [100%]
+
+============================== 18 passed in 0.01s ==============================
